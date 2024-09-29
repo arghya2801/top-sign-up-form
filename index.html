@@ -24,29 +24,39 @@
                     accusantium? Pariatur iusto ab nulla.</p>
             </div>
             <div class="form">
-                <form action="/submit_form" method="POST"> <!-- Adjust the action attribute as needed -->
-                    <h1>User Registration</h1>
-
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" required>
-
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone" required>
-
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-
-                    <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-
-                    <button type="submit">Register</button> <!-- Submit button -->
-                </form>
+                <h1>User Registration</h1>
+                <fieldset>
+                    <div class="input-group">
+                        <label for="firstname">First Name:</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                </fieldset>
+            
+                <button type="submit">Register</button>
             </div>
 
         </div>
