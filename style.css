@@ -1,5 +1,10 @@
-/* .image-container {
-    
+/* .main-container {
+    display: flex;
+}
+
+.image-container {
+    position: relative;
+    height: 100vh;
 } */
 
 img {
@@ -11,10 +16,44 @@ img {
 }
 
 .overlay-box {
-    background-color: red;
+    background-color: rgb(0, 0, 0, 0.5);
     position:fixed;
     left:0;
     top: 20vh;
     width: calc(100vh * (350.125 / 525));
-    height: 100px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.overlay-box img {
+    position: relative;
+    height: 130px;
+    left: 15%;
+
+}
+
+.logo-text {
+    color: white;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    margin-left: 20%;
+}
+
+.right-content {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* justify-content: center;
+    align-items: center; */
+    position: absolute;
+    left: calc(100vh * (350.125 / 525));
+    margin: 20px 50px 20px 50px;
+}
+.welcome {
+    font-size: 20px;
+    font-weight:bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    
 }
